@@ -19,7 +19,7 @@ const handleLogin = async () => {
   try {
     await userStore.login({ email: email.value, password: password.value })
     await userStore.fetchUser()
-    router.push('/incidences')
+    router.push('/MainPage')
   } catch (error) {
     console.error('Error al iniciar sesión:', error)
     alert('Login Fallido. Revisa tus credenciales.')
